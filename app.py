@@ -48,6 +48,8 @@ def rectify_html(html_code):
         html_code = html_code.replace(bad, good)
     return html_code
 
+user_input = st.text("Paste your HTML code:")
+
 
 def predict_and_rectify(html_code):
     # Convert the html_code to a sequence and pad it
@@ -66,7 +68,6 @@ def predict_and_rectify(html_code):
 
 
 
-user_input = st.text_area("Paste your HTML code:")
 
 def predict():
     if user_input:
