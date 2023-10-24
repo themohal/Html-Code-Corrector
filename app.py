@@ -62,7 +62,7 @@ def predict_and_rectify(html_code):
     # If it's bad practice (prediction close to 0), rectify it
     if prediction[0][0] < 0.5:
         corrected_html = rectify_html(html_code)
-        st.write(f'<h1 style="color:#33ff33;font-size:24px;">Bad Practice. Rectified Code:{ corrected_html}</h1>', unsafe_allow_html=True)
+        st.write("Bad Practice. Rectified Code:", corrected_html)
     else:
         st.write("Good Practice.")
 
