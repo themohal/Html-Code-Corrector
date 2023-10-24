@@ -62,20 +62,20 @@ def predict_and_rectify(html_code):
     # If it's bad practice (prediction close to 0), rectify it
     if prediction[0][0] < 0.5:
         corrected_html = rectify_html(html_code)
-        return "Bad Practice. Rectified Code:", corrected_html
+        st.write("Bad Practice. Rectified Code:", corrected_html)
     else:
-        return "Good Practice."
+        st.write("Good Practice.")
 
 
 
 
-def predict():
-    if user_input:
-        corrected_code = predict_and_rectify(user_input)  # or use your prediction function
-        st.write(corrected_code)
-        # st.write("Corrected Code:", value=corrected_code, height=200)
+# def predict():
+#     if user_input:
+#         corrected_code = predict_and_rectify(user_input)  # or use your prediction function
+#         st.write(corrected_code)
+#         # st.write("Corrected Code:", value=corrected_code, height=200)
 
 
-st.button("Predict", on_click=predict)
+st.button("Predict", on_click=predict_and_rectify(user_input))
 
 
