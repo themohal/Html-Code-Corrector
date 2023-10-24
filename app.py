@@ -48,7 +48,7 @@ def rectify_html(html_code):
         html_code = html_code.replace(bad, good)
     return html_code
 
-user_input = st.text("Paste your HTML code:")
+user_input = st.text_input(label="Paste your HTML code:")
 
 
 def predict_and_rectify(html_code):
