@@ -26,6 +26,8 @@ y_bad = [0] * len(X_bad)
 y_good = [1] * len(X_good)
 y = np.array(y_bad + y_good)
 
+st.title("HTML Auto-Correct Tool")
+
 
 def rectify_html(html_code):
     # For simplicity, we use a rule-based approach to fix the bad practices
@@ -58,18 +60,18 @@ def predict_and_rectify(html_code):
     # If it's bad practice (prediction close to 0), rectify it
     if prediction[0][0] < 0.5:
         corrected_html = rectify_html(html_code)
-        return "Bad Practice. Rectified Code:", corrected_html
+        st.write( "Bad Practice. Rectified Code:", corrected_html)
     else:
-        return "Good Practice."
-st.title("HTML Auto-Correct Tool")
+        st.write("Good Practice.")
+
 
 
 user_input = st.text_area("Paste your HTML code:")
 
 def predict():
     if user_input:
-        corrected_code = predict_and_rectify(user_input)  # or use your prediction function
-        st.text_area("Corrected Code:", value=corrected_code, height=200)
+        predict_and_rectify(user_input)  # or use your prediction function
+        # st.write("Corrected Code:", value=corrected_code, height=200)
 
 
 st.button("Predict", on_click=predict)
