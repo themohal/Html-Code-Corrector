@@ -52,19 +52,22 @@ user_input = st.text_input(label="Paste your HTML code:")
 
 
 def predict_and_rectify(html_code):
+    if html_code:
     # Convert the html_code to a sequence and pad it
-    sequence = tokenizer.texts_to_sequences([html_code])
-    padded_sequence = pad_sequences(sequence, maxlen=X.shape[1], padding="post")
+            sequence = tokenizer.texts_to_sequences([html_code])
+            padded_sequence = pad_sequences(sequence, maxlen=X.shape[1], padding="post")
 
-    # Predict
-    prediction = model.predict(padded_sequence)
+            # Predict
+            prediction = model.predict(padded_sequence)
 
-    # If it's bad practice (prediction close to 0), rectify it
-    if prediction[0][0] < 0.5:
-        corrected_html = rectify_html(html_code)
-        st.write("Bad Practice. Rectified Code:", corrected_html)
+            # If it's bad practice (prediction close to 0), rectify it
+            if prediction[0][0] < 0.5:
+                corrected_html = rectify_html(html_code)
+                st.write("Bad Practice. Rectified Code:", corrected_html)
+            else:
+                st.write("Good Practice.")
     else:
-        st.write("Good Practice.")
+         st.write('Please input html code')
 
 
 
