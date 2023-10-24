@@ -63,10 +63,15 @@ def predict_and_rectify(html_code):
         return "Good Practice."
 
 
-st.title("HTML Auto-Correct Tool")
-
 user_input = st.text_area("Paste your HTML code:")
 
-if user_input:
-    corrected_code = predict_and_rectify(user_input)  # or use your prediction function
-    st.text_area("Corrected Code:", value=corrected_code, height=200)
+def predict():
+    if user_input:
+        corrected_code = predict_and_rectify(user_input)  # or use your prediction function
+        st.text_area("Corrected Code:", value=corrected_code, height=200)
+
+st.title("HTML Auto-Correct Tool")
+
+st.button("Predict", on_click=predict)
+
+
