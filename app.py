@@ -78,5 +78,6 @@ def predict_and_rectify(html_code):
 
 
 st.button("Predict", on_click=predict_and_rectify(user_input))
+st.write("Developed By: [Muhammad Farjad Ali Raza](https://www.linkedin.com/in/farjadaliraza/)")
 
 
