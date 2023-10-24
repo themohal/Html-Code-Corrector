@@ -66,8 +66,6 @@ def predict_and_rectify(html_code):
                 st.write("Bad Practice. Rectified Code:", corrected_html)
             else:
                 st.write("Good Practice.")
-    else:
-         st.write('Please input html code')
 
 
 
