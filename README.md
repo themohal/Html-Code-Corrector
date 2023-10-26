@@ -31,7 +31,7 @@ Intially the results were good below is the provided list of bad practices that 
 - ```<img src='http://insecure.com/image.jpg'>```
 - ```<div>This is div</div>```
 
-Link to website for testing purpose is given below:
+Link to website for testing purpose is:
 [HTML Code Corrector](https://html-code-corrector-app.streamlit.app/)
 
 
