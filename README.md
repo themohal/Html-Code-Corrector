@@ -22,14 +22,14 @@ Intially the results were good below is the provided list of bad practices that 
 
 - ```<p>This is bad```
 - ```<center>Centered content```
-- `<div style='color: red'>
-- `<table><tr><td>Layout</td></tr></table>
-- `<img src='image.jpg'>
-- `This is content
-- `<div custom-attr='value'>
-- `<div id='duplicateID'>
-- `<img src='http://insecure.com/image.jpg'>
-- `<div>This is div</div>
+- ```<div style='color: red'>```
+- ```<table><tr><td>Layout</td></tr></table>```
+- ```<img src='image.jpg'>```
+- ```This is content```
+- ```<div custom-attr='value'>```
+- ```<div id='duplicateID'>```
+- ```<img src='http://insecure.com/image.jpg'>```
+- ```<div>This is div</div>```
 
 Link to website for testing purpose is given below:
 [HTML Code Corrector](https://html-code-corrector-app.streamlit.app/)
