@@ -20,8 +20,8 @@ rectified using rule based technique.
 ## Results
 Intially the results were good below is the provided list of bad practices that is used for training: 
 
-- `<p>This is bad
-- `<center>Centered content
+- ```<p>This is bad```
+- ```<center>Centered content```
 - `<div style='color: red'>
 - `<table><tr><td>Layout</td></tr></table>
 - `<img src='image.jpg'>
