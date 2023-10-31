@@ -22,9 +22,11 @@ Intially the results are as follows:
 
 - Training and Validation Accuracy is 86%
 ![Model Training Accuracy](training_acc.png)
-![Model Training Loss](training_loss.png)
 
 - Test Accuracy is 85%
+![Model Training Loss](training_loss.png)
+
+
 
 Bad HTML code examples are given below:
 
