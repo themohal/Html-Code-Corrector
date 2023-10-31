@@ -2,15 +2,15 @@
 
 ## Dataset
 
-The dataset contains on very small list of incorrect codes and correct codes.
+The dataset contains incorrect codes and their correct codes in html. The dataset is generated synthetically and there are 7362 unique examples.
 
 ## Preprocessing
 
-Dataset is first transformed from text to sequences then labelled as 0 bad and 1 good. 
+Dataset is first transformed from text to sequences then labelled as 0 for bad and 1 for good. The dataset is then split 20% is used for validation and 20% is used for testing.
 
 ## Model
 
-Model is has 64 LSTM cells in first layer and 32 cells in second layer. Model is trained for 20 epochs. 
+Model has 64 LSTM cells in first layer and 32 cells in second layer. Model is trained for 20 epochs. 
 
 ## Testing
 
@@ -18,7 +18,15 @@ At present for testing purpose training dataset is used if the model predicts it
 rectified using rule based technique.
 
 ## Results
-Intially the results were good below is the provided list of bad practices that is used for training: 
+Intially the results are as follows:
+
+- Training and Validation Accuracy is 86%
+![Model Training Accuracy](training_acc.jpg)
+![Model Training Loss](training_loss.jpg)
+
+- Test Accuracy is 85%
+
+Bad HTML code examples are given below:
 
 - ```<p>This is bad```
 - ```<center>Centered content```
@@ -33,5 +41,3 @@ Intially the results were good below is the provided list of bad practices that 
 
 Link to website for testing purpose is:
 [HTML Code Corrector](https://html-code-corrector-app.streamlit.app/)
-
-
