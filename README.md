@@ -2,7 +2,7 @@
 
 ## Dataset
 
-The dataset contains incorrect codes and their correct codes in html. The dataset is generated synthetically and there are 7362 unique examples.
+The dataset contains incorrect codes and their correct codes in html. The dataset is generated synthetically and there are 5157 unique examples.
 
 ## Preprocessing
 
@@ -10,17 +10,19 @@ Dataset is first transformed from text to sequences then labelled as 0 for bad a
 
 ## Model
 
-Model has 64 LSTM cells in first layer and 32 cells in second layer. Model is trained for 20 epochs. 
+Model has 64 LSTM cells in first layer and 32 cells in second layer. Model is trained for 20 epochs.
+
+![Model Architechture](model.png)
 
 ## Results
 Intially the results are as follows:
 
-- Training and Validation Accuracy is 86%.
+- Training Accuracy 92% and Validation Accuracy is 92%
 
 ![Model Training Accuracy](training_acc.png)
 ![Model Training Loss](training_loss.png)
 
-- Test Accuracy is 85%.
+- Test Accuracy is 90%
 
 
 Bad HTML code examples are given below:
