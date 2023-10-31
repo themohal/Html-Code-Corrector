@@ -12,11 +12,6 @@ Dataset is first transformed from text to sequences then labelled as 0 for bad a
 
 Model has 64 LSTM cells in first layer and 32 cells in second layer. Model is trained for 20 epochs. 
 
-## Testing
-
-At present for testing purpose training dataset is used if the model predicts it as bad then the html code is 
-rectified using rule based technique.
-
 ## Results
 Intially the results are as follows:
 
@@ -26,6 +21,7 @@ Intially the results are as follows:
 ![Model Training Loss](training_loss.png)
 
 - Test Accuracy is 85%.
+
 
 Bad HTML code examples are given below:
 
