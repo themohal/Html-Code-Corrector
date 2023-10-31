@@ -21,8 +21,8 @@ rectified using rule based technique.
 Intially the results are as follows:
 
 - Training and Validation Accuracy is 86%
-![Model Training Accuracy](training_acc.jpg)
-![Model Training Loss](training_loss.jpg)
+![Model Training Accuracy](training_acc.png)
+![Model Training Loss](training_loss.png)
 
 - Test Accuracy is 85%
 
