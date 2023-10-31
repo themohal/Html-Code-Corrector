@@ -23,6 +23,7 @@ Intially the results are as follows:
 - Training and Validation Accuracy is 86%
 ![Model Training Accuracy](training_acc.png)
 
+<br>
 - Test Accuracy is 85%
 ![Model Training Loss](training_loss.png)
 
