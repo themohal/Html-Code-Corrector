@@ -10,7 +10,7 @@ Dataset is first transformed from text to sequences then labelled as 0 for bad a
 
 ## Model
 
-Model has 2 LSTM cells first layer has 64 neurons and second has 32 neurons. Model is trained for 20 epochs.
+Model has 2 LSTM cells first cell has 64 neurons and second cell has 32 neurons. Model is trained for 20 epochs.
 
 ![Model Architechture](model.png)
 
